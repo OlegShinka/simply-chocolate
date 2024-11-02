@@ -13,7 +13,9 @@ body {
 
 :root {
     --main-BG-color: #fafafa;
+    --primary-BG-color: #ffff;
     --primary-text-color: #ffff;
+    --secondary-BG-color: #1E1823;
     --secondary-text-color: #111;
     --adv-text-color: rgba(255, 255, 255, 0.7);
     --input-text-color: rgba(64, 64, 64, 0.3);
@@ -21,7 +23,7 @@ body {
     --secondary-accent-color: #FD9222;
     --primary-btn-BG-color: #FD9222;
     --secondary-btn-BG-color: #1E1823;
-    --secondary-BG-color: #1E1823;
+
     --hover-btn-BG-color: #FCF1E0;
     --hero-BG-color: #fcf1e0;
     --items: 4;
@@ -134,6 +136,11 @@ img {
     font-size: 14px;
     line-height: 1.14286;
     letter-spacing: -0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item-link:hover {
+    color: var(--primary-btn-BG-color);
 }
 
 .header-social-list {
@@ -550,4 +557,177 @@ img {
     letter-spacing: -0.02em;
     color: #111;
     margin-bottom: 24px;
+}
+
+/* section OUR PRODUCTS */
+
+
+.products {
+    z-index: 0;
+    margin-bottom: 128px;
+}
+
+.products-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--secondary-text-color);
+    margin-bottom: 50px;
+}
+
+.span-products-title {
+    color: var(--primary-btn-BG-color);
+}
+
+.swiper {
+    z-index: 0;
+}
+
+.swiper-wrapper-pagination {
+    margin-top: 20px;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    position: relative;
+    margin-top: 32px;
+}
+
+.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+
+    opacity: 1;
+    border-radius: 13px;
+    background: rgba(17, 17, 17, 0.1);
+}
+
+.swiper-pagination-bullet-active {
+    width: 28px;
+    height: 13px;
+
+    opacity: 1;
+    border-radius: 13px;
+    background-color: var(--primary-btn-BG-color);
+}
+
+.product-item {
+    position: relative;
+    padding: 32px 20px;
+    height: 364px;
+    width: 270px;
+    background: var(--primary-BG-color);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+    border-radius: 15px;
+}
+
+.slide-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33333;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #111;
+}
+
+.slide-desc {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.7);
+    margin-bottom: 18px;
+}
+
+.slide-btn {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    padding: 8px 18px;
+    width: 94px;
+    height: 33px;
+    background-color: var(--main-BG-color);
+    font-weight: 600;
+    font-size: 14px;
+    color: #111;
+    cursor: pointer;
+}
+
+/* modal window BUY NOW */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buy-now-modal {
+    position: absolute;
+    z-index: 3;
+    top: 100px;
+    left: 50%;
+    overflow: scroll;
+    transform: translate(-50%, 0);
+    width: 611px;
+    height: 1058px;
+    min-height: 584px;
+    background-color: var(--main-BG-color);
+    border-radius: 15px;
+    visibility: visible;
+    box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 3px 0px #0000001F, 0px 1px 1px 0px #00000024;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-top: 72px;
+    padding-bottom: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.btn-modal-close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 24px;
+    right: 24px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+    cursor: pointer;
+}
+
+.icon-modal-close:hover,
+.icon-modal-close:focus {
+    border: none;
+    fill: var(--secondary-accent-color);
+}
+
+.icon-modal-close {
+    fill: var(--secondary-text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

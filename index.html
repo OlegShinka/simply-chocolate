@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -29,16 +30,16 @@
             </div>
             <ul class="header-nav-list list">
                 <li class="nav-item">
-                    <a href="" class="nav-item-link link">Home</a>
+                    <a href="#hero" class="nav-item-link link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-item-link link">How it’s made?</a>
+                    <a href="#made" class="nav-item-link link">How it’s made?</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-item-link link">Our products</a>
+                    <a href="#products" class="nav-item-link link">Our products</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-item-link link">Top sellers</a>
+                    <a href="#sellers" class="nav-item-link link">Top sellers</a>
                 </li>
                 <li class="nav-item">
                     <a href="" class="nav-item-link link">Chocolate is loved</a>
@@ -65,7 +66,7 @@
     </header>
     <main>
         <!-- section HERO -->
-        <section class="hero container">
+        <section id="hero" class="hero container">
             <h1 class="visually-hidden">Simply Chokolate</h1>
             <h2 class="hero-title">Treat yourself or a loved one to
                 our finest ingredients for a moment
@@ -229,7 +230,7 @@
                     </div>
                 </li>
                 <li class="component-card sweet-chokolate">
-                    <img src="./images/chocolate.png" alt="chocolate" width="206" class="component-pic" />
+                    <img src="./images/cofee.png" alt="chocolate" width="206" class="component-pic" />
                     <p class="component-card-title">SEMI - SWEET CHOCOLATE</p>
                     <div class="component-desc-wrapper">
                         <h3 class="component-title">
@@ -253,7 +254,7 @@
         </section>
 
         <!-- section HOW IT'S MADE? -->
-        <section class="how-its-made-section container">
+        <section id="made" class="how-its-made-section container">
             <h2 class="how-its-made-title">
                 HOW IT'S <span class="span-title-how-it-made">MADE?</span>
             </h2>
@@ -322,8 +323,167 @@
                 </div>
             </div>
         </section>
+        <!-- section OUR PRODUCTS -->
+        <section id="products" class="products container">
+            <h2 class="products-title">
+                Our <span class="span-products-title">products</span>
+            </h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="product-item swiper-slide swiper-slide-active">
+                        <img src="./images/products/image 1 .jpg" alt="" width="200" class="pic-slide">
+                        <h3 class="slide-title">Orange</h3>
+                        <p class="slide-desc">Dark chocolate</p>
+                        <button type="button" class="slide-btn" data-modal-open> 45 UAH</button>
+                    </div>
+                    <div class="product-item swiper-slide swiper-slide-active">
+                        <img src="./images/products/image 1 .jpg" alt="" width="200" class="pic-slide">
+                        <h3 class="slide-title">sadfasg</h3>
+                        <p class="slide-desc">Dark chocolate</p>
+                        <button type="button" class="slide-btn" data-modal-open> 45 UAH</button>
+                    </div>
+                    <!-- <div class="product-item swiper-slide">
+                        <img src="./images/products/image 2 .jpg" alt="" width="200" class="pic-slide">
+                        <h3 class="slide-title">APPLE&CRANBERRY</h3>
+                        <p class="slide-desc">Dark chocolate</p>
+                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                    </div> -->
+                    <div class="product-item swiper-slide">
+                        <img src="./images/products/image 3 .jpg" alt="" width="200" class="pic-slide">
+                        <h3 class="slide-title">lime&sea salt</h3>
+                        <p class="slide-desc">Dark chocolate</p>
+                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                    </div>
+                    <div class="product-item swiper-slide">
+                        <img src="./images/products/image 4 .jpg" alt="" width="200" class="pic-slide">
+                        <h3 class="slide-title">pineapple</h3>
+                        <p class="slide-desc">Dark chocolate</p>
+                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                    </div>
+                    <div class="product-item swiper-slide">
+                        <img src="./images/products/image 5 .jpg" alt="" width="200" class="pic-slide">
+                        <h3 class="slide-title">Classic</h3>
+                        <p class="slide-desc">White chocolate</p>
+                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                    </div>
+                    <div class="product-item swiper-slide">
+                        <img src="./images/products/image 6 .jpg" alt="" width="200" class="pic-slide">
+                        <h3 class="slide-title">honey</h3>
+                        <p class="slide-desc">Dark chocolate</p>
+                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                    </div>
+                    <div class="product-item swiper-slide">
+                        <img src="./images/products/image 7 .jpg" alt="" width="200" class="pic-slide">
+                        <h3 class="slide-title">Roasted fruits</h3>
+                        <p class="slide-desc">Dark chocolate</p>
+                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                    </div>
+                    <div class="product-item swiper-slide">
+                        <img src="./images/products/image 8 .jpg" alt="" width="200" class="pic-slide">
+                        <h3 class="slide-title">Classic</h3>
+                        <p class="slide-desc">White chocolate</p>
+                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination swiper-wrapper-pagination">
+
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                    <span class="span-pagination-bullet"></span>
+                    <span class="span-pagination-bullet"></span>
+                    <span class="span-pagination-bullet"></span>
+                    <span class="span-pagination-bullet"></span>
+                    <span class="span-pagination-bullet"></span>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+        </section>
     </main>
     <footer></footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="buy-now-modal">
+            <button type="button" class="btn-modal-close" data-modal-close>
+                <svg class="icon-modal-close" width="24" height="24">
+                    <use href="./images/svg/icons.svg#icon-dollar"></use>
+                </svg>
+            </button>
+            <p class="modal-buynow-title">Buy now</p>
+            <div class="products-card-container">
+                <ul class="products-list list">
+                    <li class="product-card">
+                        <img src="./images/cofee.png" />
+                        <button type="button" class="buy-btn">100 g</button>
+                    </li>
+                    <li class="product-card">
+                        <img src="./images/cofee.png" />
+                        <button type="button" class="buy-btn">200 g</button>
+                    </li>
+                    <li class="product-card">
+                        <img src="./images/cofee.png" />
+                        <button type="button" class="buy-btn">300 g</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- форма -->
+            <form class="form-modal">
+                <!-- first element -->
+                <div class="form-field">
+                    <label for="user-name" class="label-inp">Personal information
+                        <div class="wrapper-input">
+                            <input type="text" class="input-modal" name="name" id="name" placeholder="Name">
+                            <input type="text" class="input-modal" name="surname" id="surname" placeholder="Surname">
+                        </div>
+                    </label>
+
+                </div>
+                <!-- second element -->
+                <div class="form-field">
+                    <label for="email" class="label-inp">Email</label>
+                    <div class="wrapper-input">
+                        <input type="email" class="input-modal" name="email" id="email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <!-- third element -->
+                <div class="form-field">
+                    <label for="user-name" class="label-inp">Phone number</label>
+                    <div class="wrapper-input">
+                        <input type="email" class="input-modal" name="email" id="email" placeholder="Phone number">
+                    </div>
+                </div>
+                <!-- 4-th element -->
+                <div class="form-field">
+                    <label for="user-name" class="label-inp">Card number</label>
+                    <div class="wrapper-input">
+                        <input type="email" class="input-modal" name="email" id="email" placeholder="Enter card">
+                    </div>
+                </div>
+                <!-- 5-th element -->
+                <div class="form-field-textarea">
+                    <label for="user-comment" class="label-inp">Comment</label>
+                    <textarea class="textarea-modal" name="user-comment" id="user-comment"
+                        placeholder="Enter text"></textarea>
+                </div>
+                <!-- 5-rd element -->
+                <button type="submit" class="btn-modal">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
