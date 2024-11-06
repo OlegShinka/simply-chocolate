@@ -72,8 +72,8 @@
                 our finest ingredients for a moment
                 of pure delight!</h2>
             <div class="hero-btns-container">
-                <button type="button" class="btn btn-buy">Buy now</button>
-                <a href="" class=" btn hero-btn-link link">How it’s made</a>
+                <button type="button" class="btn btn-buy" data-modal-open>Buy now</button>
+                <a href="#made" class=" btn hero-btn-link link">How it’s made</a>
                 <a href="" class="anchor-footer-btn link">
                     <p class="scroll-desc">scroll down</p>
                     <span class="span-circle">
@@ -167,7 +167,7 @@
             </p>
             <ul class="unique-components-list list">
                 <li class="component-card chokolate card-set-item">
-                    <img src="./images/chocolate.png" alt="chocolate" width="206" class="component-pic" />
+                    <img src="./images/unique/chocolate.png" alt="chocolate" width="206" class="component-pic" />
                     <p class="component-card-title">Milk chokolate</p>
                     <div class="component-desc-wrapper">
                         <h3 class="component-title">
@@ -190,7 +190,7 @@
                     </div>
                 </li>
                 <li class="component-card milk">
-                    <img src="./images/milk.png" alt="chocolate" width="206" class="component-pic" />
+                    <img src="./images/unique/milk.png" alt="chocolate" width="206" class="component-pic" />
                     <p class="component-card-title">Milk</p>
                     <div class="component-desc-wrapper">
                         <h3 class="component-title">
@@ -210,7 +210,7 @@
                     </div>
                 </li>
                 <li class="component-card nuts">
-                    <img src="./images/nuts.png" alt="chocolate" width="206" class="component-pic" />
+                    <img src="./images/unique/nuts.png" alt="chocolate" width="206" class="component-pic" />
                     <p class="component-card-title">Nuts</p>
                     <div class="component-desc-wrapper">
                         <h3 class="component-title">
@@ -230,7 +230,7 @@
                     </div>
                 </li>
                 <li class="component-card sweet-chokolate">
-                    <img src="./images/cofee.png" alt="chocolate" width="206" class="component-pic" />
+                    <img src="./images/unique/cofee.png" alt="chocolate" width="206" class="component-pic" />
                     <p class="component-card-title">SEMI - SWEET CHOCOLATE</p>
                     <div class="component-desc-wrapper">
                         <h3 class="component-title">
@@ -339,18 +339,12 @@
                         <p class="slide-desc">Dark chocolate</p>
                         <button type="button" class="slide-btn" data-modal-open> 45 UAH</button>
                     </div>
-                    <div class="product-item swiper-slide swiper-slide-active">
-                        <img src="./images/products/image 1 .jpg" alt="" width="200" class="pic-slide">
-                        <h3 class="slide-title">sadfasg</h3>
-                        <p class="slide-desc">Dark chocolate</p>
-                        <button type="button" class="slide-btn" data-modal-open> 45 UAH</button>
-                    </div>
-                    <!-- <div class="product-item swiper-slide">
+                    <div class="product-item swiper-slide">
                         <img src="./images/products/image 2 .jpg" alt="" width="200" class="pic-slide">
                         <h3 class="slide-title">APPLE&CRANBERRY</h3>
                         <p class="slide-desc">Dark chocolate</p>
                         <button class="slide-btn" data-modal-open> 45 UAH</button>
-                    </div> -->
+                    </div>
                     <div class="product-item swiper-slide">
                         <img src="./images/products/image 3 .jpg" alt="" width="200" class="pic-slide">
                         <h3 class="slide-title">lime&sea salt</h3>
@@ -398,64 +392,58 @@
                     <span class="span-pagination-bullet"></span>
                     <span class="span-pagination-bullet"></span>
                 </div>
-
-                <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div> -->
-
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
             </div>
         </section>
     </main>
     <footer></footer>
     <div class="backdrop is-hidden" data-modal>
-        <div class="buy-now-modal">
+        <div class="buyNow-modal">
             <button type="button" class="btn-modal-close" data-modal-close>
                 <svg class="icon-modal-close" width="24" height="24">
                     <use href="./images/svg/icons.svg#icon-dollar"></use>
                 </svg>
             </button>
-            <p class="modal-buynow-title">Buy now</p>
-            <div class="products-card-container">
-                <ul class="products-list list">
-                    <li class="product-card">
-                        <img src="./images/cofee.png" />
-                        <button type="button" class="buy-btn">100 g</button>
-                    </li>
-                    <li class="product-card">
-                        <img src="./images/cofee.png" />
-                        <button type="button" class="buy-btn">200 g</button>
-                    </li>
-                    <li class="product-card">
-                        <img src="./images/cofee.png" />
-                        <button type="button" class="buy-btn">300 g</button>
-                    </li>
-                </ul>
-            </div>
+            <p class="buyNow-modal-title">Buy <span class="buyNow-modal-title-span">now</span></p>
+
+            <ul class="products-list list">
+                <li class="product-card">
+                    <img class="product-img" src="./images/buyNow/pic-buy-now01.png " />
+                    <p class="buy-weight">100 g</p>
+                </li>
+                <li class="product-card">
+                    <img class="product-img" src="./images/buyNow/pic-buy-now02.png " />
+                    <p class="buy-weight">200 g</p>
+                </li>
+                <li class="product-card">
+                    <img class="product-img" src="./images/buyNow/pic-buy-now03.png " />
+                    <p class="buy-weight">300 g</p>
+                </li>
+            </ul>
+
             <!-- форма -->
             <form class="form-modal">
                 <!-- first element -->
                 <div class="form-field">
                     <label for="user-name" class="label-inp">Personal information
-                        <div class="wrapper-input">
-                            <input type="text" class="input-modal" name="name" id="name" placeholder="Name">
-                            <input type="text" class="input-modal" name="surname" id="surname" placeholder="Surname">
-                        </div>
                     </label>
+                    <div class="form-field-name-buyNow">
+                        <input type="text" class="input-modal" name="name" id="user-name" placeholder="Name">
+                        <input type="text" class="input-modal" name="user-name" id="surname" placeholder="Surname">
+                    </div>
+
 
                 </div>
                 <!-- second element -->
                 <div class="form-field">
                     <label for="email" class="label-inp">Email</label>
-                    <div class="wrapper-input">
+                    <div class="form-field-email-buyNow">
                         <input type="email" class="input-modal" name="email" id="email" placeholder="Enter your email">
                     </div>
                 </div>
                 <!-- third element -->
                 <div class="form-field">
                     <label for="user-name" class="label-inp">Phone number</label>
-                    <div class="wrapper-input">
+                    <div class="form-field-phone-buyNow">
                         <input type="email" class="input-modal" name="email" id="email" placeholder="Phone number">
                     </div>
                 </div>
@@ -473,17 +461,15 @@
                         placeholder="Enter text"></textarea>
                 </div>
                 <!-- 5-rd element -->
-                <button type="submit" class="btn-modal">Submit</button>
+                <button type="submit" class="btn-modal-buyNow">Submit</button>
             </form>
 
         </div>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"></script>
-
     <script src="./js/modal.js"></script>
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
