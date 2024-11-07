@@ -40,6 +40,7 @@ h5,
 h6,
 p {
     margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -159,7 +160,7 @@ img {
 /* HERO section */
 
 .hero {
-    background-color: grey;
+    background-color: var(--secondary-BG-color);
     padding-top: 381px;
     padding-bottom: 40px;
     padding-left: 40px;
@@ -787,6 +788,7 @@ img {
 
 .form-field,
 .form-field-textarea {
+    position: relative;
     margin-bottom: 18px;
 }
 
@@ -804,6 +806,7 @@ img {
 }
 
 .input-modal {
+    display: block;
     border: 1.50px solid rgba(17, 17, 17, 0.05);
     border-radius: 13px;
     padding: 22px 24px;
@@ -811,6 +814,67 @@ img {
     width: 100%;
     height: 66px;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
+    outline: transparent;
+}
+
+.input-modal::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+}
+
+.textarea-modal::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-phone {
+    padding-left: 177px;
+}
+
+.wrapper-flag {
+    position: absolute;
+    top: 60%;
+    left: 24px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+
+    padding: 0px 20px 0px 0px;
+    width: 113px;
+    height: 32px;
+    box-shadow: 3px 0 0 0 rgba(0, 0, 0, 0.1);
+    /* background: #fafafa; */
+}
+
+.wrapper-flag::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(64, 64, 64, 0.3);
+    ;
+
+}
+
+.country-code {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: #000;
+}
+
+.card-icon-wrapper {
+    position: absolute;
+    top: 60%;
+    right: 24px;
+    transform: translateY(-50%);
+
 }
 
 .textarea-modal {
@@ -837,4 +901,72 @@ img {
     line-height: 17px;
     cursor: pointer;
     border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal-buyNow:hover,
+.btn-modal-buyNow:focus {
+    color: var(--secondary-accent-color);
+    background-color: var(--hover-btn-BG-color);
+}
+
+/* section TOP SELLERS */
+
+.sellers {
+    margin-bottom: 128px;
+}
+
+.sellers-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--secondary-accent-color);
+    margin-bottom: 50px;
+}
+
+.sellers-title-span {
+    color: var(--secondary-text-color);
+}
+
+.sellers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.selllers-desc-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sellers-desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    color: #111;
+    max-width: 407px;
+}
+
+.btn-buy-sellers {
+    color: var(--primary-text-color);
+    font-weight: 600;
+    font-size: 14px;
+    background-color: var(--primary-btn-BG-color);
+    border: 1px solid transparent;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    border-radius: 100px;
+    width: 162px;
+    height: 50px;
+}
+
+.btn-buy-sellers:hover,
+.btn-buy-sellers:focus {
+    color: var(--secondary-accent-color);
+    background-color: var(--hover-btn-BG-color);
 }

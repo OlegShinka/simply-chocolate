@@ -394,6 +394,25 @@
                 </div>
             </div>
         </section>
+        <!-- section TOP SELLERS -->
+        <section id="sellers" class="sellers container">
+            <h2 class="sellers-title">Top <span class="sellers-title-span">sellers</span></h2>
+            <ul class="sellers-list list">
+                <li class="sellers-item"><img src="./images/sellers/sellers01 (1).jpg" alt="" width="368" height="464">
+                </li>
+                <li class="sellers-item"><img src="./images/sellers/sellers02 (1).jpg" alt="" width="368" height="464">
+                </li>
+                <li class="sellers-item"><img src="./images/sellers/sellers03 (1).jpg" alt="" width="368" height="464">
+                </li>
+            </ul>
+            <div class="selllers-desc-container">
+                <p class="sellers-desc">Crazy enough chocolate originates from a bean just like the coffee bean called
+                    Cacao. Cacao has been around for
+                    thousands of years and was first discovered by the Native American tribe called the Mayans.</p>
+                <button type="button" class="btn btn-buy-sellers" data-modal-open>Buy now</button>
+
+            </div>
+        </section>
     </main>
     <footer></footer>
     <div class="backdrop is-hidden" data-modal>
@@ -427,7 +446,7 @@
                     <label for="user-name" class="label-inp">Personal information
                     </label>
                     <div class="form-field-name-buyNow">
-                        <input type="text" class="input-modal" name="name" id="user-name" placeholder="Name">
+                        <input type="text" class="input-modal" name="name" id="user-name" placeholder="Name" required>
                         <input type="text" class="input-modal" name="user-name" id="surname" placeholder="Surname">
                     </div>
 
@@ -437,21 +456,31 @@
                 <div class="form-field">
                     <label for="email" class="label-inp">Email</label>
                     <div class="form-field-email-buyNow">
-                        <input type="email" class="input-modal" name="email" id="email" placeholder="Enter your email">
+                        <input type="email" class="input-modal" name="email" id="email" placeholder="Enter your email"
+                            required>
                     </div>
                 </div>
                 <!-- third element -->
                 <div class="form-field">
+                    <div class="wrapper-flag">
+                        <img src="./images/LeftIcon.png" alt="" width="32" height="34">
+                        <p class="country-code">+380</p>
+                    </div>
                     <label for="user-name" class="label-inp">Phone number</label>
                     <div class="form-field-phone-buyNow">
-                        <input type="email" class="input-modal" name="email" id="email" placeholder="Phone number">
+                        <input type="email" class="input-modal modal-phone" name="email" id="email"
+                            placeholder="Phone number" required>
                     </div>
                 </div>
                 <!-- 4-th element -->
                 <div class="form-field">
+                    <div class="card-icon-wrapper">
+                        <img src="./images/Mastercard.png" alt="" width="44" height="30">
+                    </div>
                     <label for="user-name" class="label-inp">Card number</label>
                     <div class="wrapper-input">
-                        <input type="email" class="input-modal" name="email" id="email" placeholder="Enter card">
+                        <input type="email" class="input-modal" name="email" id="email" placeholder="Enter card"
+                            required>
                     </div>
                 </div>
                 <!-- 5-th element -->
