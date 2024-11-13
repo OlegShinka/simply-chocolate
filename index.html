@@ -252,7 +252,6 @@
                 </li>
             </ul>
         </section>
-
         <!-- section HOW IT'S MADE? -->
         <section id="made" class="how-its-made-section container">
             <h2 class="how-its-made-title">
@@ -329,7 +328,7 @@
                 Our <span class="span-products-title">products</span>
             </h2>
             <!-- Slider main container -->
-            <div class="swiper">
+            <div id="products-swiper" class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -337,53 +336,53 @@
                         <img src="./images/products/image 1 .jpg" alt="" width="200" class="pic-slide">
                         <h3 class="slide-title">Orange</h3>
                         <p class="slide-desc">Dark chocolate</p>
-                        <button type="button" class="slide-btn" data-modal-open> 45 UAH</button>
+                        <button type="button" class="slide-btn" data-modal-open="modal1"> 45 UAH</button>
                     </div>
                     <div class="product-item swiper-slide">
                         <img src="./images/products/image 2 .jpg" alt="" width="200" class="pic-slide">
                         <h3 class="slide-title">APPLE&CRANBERRY</h3>
                         <p class="slide-desc">Dark chocolate</p>
-                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                        <button class="slide-btn" data-modal-open="modal1"> 45 UAH</button>
                     </div>
                     <div class="product-item swiper-slide">
                         <img src="./images/products/image 3 .jpg" alt="" width="200" class="pic-slide">
                         <h3 class="slide-title">lime&sea salt</h3>
                         <p class="slide-desc">Dark chocolate</p>
-                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                        <button class="slide-btn" data-modal-open="modal1"> 45 UAH</button>
                     </div>
                     <div class="product-item swiper-slide">
                         <img src="./images/products/image 4 .jpg" alt="" width="200" class="pic-slide">
                         <h3 class="slide-title">pineapple</h3>
                         <p class="slide-desc">Dark chocolate</p>
-                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                        <button class="slide-btn" data-modal-open="modal1"> 45 UAH</button>
                     </div>
                     <div class="product-item swiper-slide">
                         <img src="./images/products/image 5 .jpg" alt="" width="200" class="pic-slide">
                         <h3 class="slide-title">Classic</h3>
                         <p class="slide-desc">White chocolate</p>
-                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                        <button class="slide-btn" data-modal-open="modal1"> 45 UAH</button>
                     </div>
                     <div class="product-item swiper-slide">
                         <img src="./images/products/image 6 .jpg" alt="" width="200" class="pic-slide">
                         <h3 class="slide-title">honey</h3>
                         <p class="slide-desc">Dark chocolate</p>
-                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                        <button class="slide-btn" data-modal-open="modal1"> 45 UAH</button>
                     </div>
                     <div class="product-item swiper-slide">
                         <img src="./images/products/image 7 .jpg" alt="" width="200" class="pic-slide">
                         <h3 class="slide-title">Roasted fruits</h3>
                         <p class="slide-desc">Dark chocolate</p>
-                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                        <button class="slide-btn" data-modal-open="modal1"> 45 UAH</button>
                     </div>
                     <div class="product-item swiper-slide">
                         <img src="./images/products/image 8 .jpg" alt="" width="200" class="pic-slide">
                         <h3 class="slide-title">Classic</h3>
                         <p class="slide-desc">White chocolate</p>
-                        <button class="slide-btn" data-modal-open> 45 UAH</button>
+                        <button class="slide-btn" data-modal-open="modal1"> 45 UAH</button>
                     </div>
                 </div>
                 <!-- If we need pagination -->
-                <div class="swiper-pagination swiper-wrapper-pagination">
+                <div class="swiper-pagination">
 
                     <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
                     <span class="span-pagination-bullet"></span>
@@ -413,16 +412,95 @@
 
             </div>
         </section>
+        <!-- section REVIEWS -->
+        <section id="reviews" class="reviews container">
+            <h2 class="review-title">
+                Chocolate <span class="span-products-title">is loved</span>
+            </h2>
+            <!-- Slider main container -->
+            <div id="reviews-swiper" class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="review-card swiper-slide swiper-slide-active">
+                        <img src="./images/review/review01.png" alt="" class="review-slide-pic">
+                        <h3 class="review-slide-title">Victoria Dobrzhanska</h3>
+                        <p class="review-slide-desc">I love this chocolate bar. Perfect combination of light crispy
+                            wafer,
+                            covered in a thin layer chocolate.</p>
+
+                    </div>
+                    <div class="review-card swiper-slide">
+                        <img src="./images/review/review02.png" alt="" width="80" height="80" class="review-slide-pic">
+                        <h3 class="review-slide-title">Victoria Dobrzhanska</h3>
+                        <p class="review-slide-desc">I love this chocolate bar. Perfect combination of light crispy
+                            wafer,
+                            covered in a thin layer chocolate.</p>
+
+                    </div>
+                    <div class="review-card swiper-slide swiper-slide-active">
+                        <img src="./images/review/review03.png" alt="" width="80" height="80" class="review-slide-pic">
+                        <h3 class="review-slide-title">Victoria Dobrzhanska</h3>
+                        <p class="review-slide-desc">I love this chocolate bar. Perfect combination of light crispy
+                            wafer,
+                            covered in a thin layer chocolate.</p>
+
+                    </div>
+                    <div class="review-card swiper-slide swiper-slide-active">
+                        <img src="./images/review/review04.png" alt="" width="80" height="80" class="review-slide-pic">
+                        <h3 class="review-slide-title">Victoria Dobrzhanska</h3>
+                        <p class="review-slide-desc">I love this chocolate bar. Perfect combination of light crispy
+                            wafer,
+                            covered in a thin layer chocolate.</p>
+
+                    </div>
+                    <div class="review-card swiper-slide swiper-slide-active">
+                        <img src="./images/review/review05.png" alt="" width="80" height="80" class="review-slide-pic">
+                        <h3 class="review-slide-title">Victoria Dobrzhanska</h3>
+                        <p class="review-slide-desc">I love this chocolate bar. Perfect combination of light crispy
+                            wafer,
+                            covered in a thin layer chocolate.</p>
+
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination swiper-wrapper-pagination">
+
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+                    <span class="span-pagination-bullet"></span>
+                    <span class="span-pagination-bullet"></span>
+                    <span class="span-pagination-bullet"></span>
+                </div>
+            </div>
+            <button type="button" class="btn review-btn" data-modal-open="modal2"> Leave a review</button>
+        </section>
+        <section class="subscribe">
+            <div class="container">
+                <h2 class=" visually-hidden">Subscribe</h2>
+                <h3 class="subscribe-title">
+                    exPLORE OUR NEW CHOCOLATE FIRST
+                </h3>
+                <p class="subscribe-desc">
+                    From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that
+                    will leave you
+                    craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece
+                    is a work of art
+                    that is sure to please.
+                </p>
+                <button type="button" class="btn btn-buy btn-subscribe" data-modal-open="modal3"> Subscribe</button>
+            </div>
+        </section>
     </main>
     <footer></footer>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- BUY NOW modal window -->
+    <div class="backdrop is-hidden" data-modal="modal1">
         <div class="buyNow-modal">
-            <button type="button" class="btn-modal-close" data-modal-close>
+            <button type="button" class="btn-modal-close" data-modal-close="modal1">
                 <svg class="icon-modal-close" width="24" height="24">
                     <use href="./images/svg/icons.svg#icon-dollar"></use>
                 </svg>
             </button>
-            <p class="buyNow-modal-title">Buy <span class="buyNow-modal-title-span">now</span></p>
+            <p class="modal-title">Buy <span class="modal-title-span">now</span></p>
 
             <ul class="products-list list">
                 <li class="product-card">
@@ -495,6 +573,86 @@
 
         </div>
 
+
+    </div>
+    <!-- REVIEW modal window -->
+    <div class="backdrop is-hidden" data-modal="modal2">
+        <div class="reviews-modal">
+            <button type="button" class="btn-modal-close" data-modal-close="modal2">
+                <svg class="icon-modal-close" width="24" height="24">
+                    <use href="./images/svg/icons.svg#icon-dollar"></use>
+                </svg>
+            </button>
+            <p class="modal-title review-modal-title">LEAVE A REVIEW ABOUT <span class="modal-title-span">OUR
+                    CHOCOLATE</span></p>
+
+            <!-- форма -->
+            <form class="form-modal">
+                <!-- first element -->
+                <div class="form-field">
+                    <div class="form-field-name-buyNow">
+                        <input type="text" class="input-modal" name="name" placeholder="Name" required>
+                    </div>
+
+                </div>
+                <!-- second element -->
+                <div class="form-field">
+                    <div class="form-field-email-buyNow">
+                        <input type="email" class="input-modal" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <!-- third element -->
+                <div class="form-field">
+                    <div class="wrapper-flag">
+                        <img src="./images/LeftIcon.png" alt="" width="32" height="34">
+                        <p class="country-code">+380</p>
+                    </div>
+                    <label for="user-name" class="label-inp">Phone number</label>
+                    <div class="form-field-phone-buyNow">
+                        <input type="email" class="input-modal modal-phone" name="email" id="email"
+                            placeholder="Phone number" required>
+                    </div>
+                </div>
+                <!-- 4-th element -->
+                <div class="form-field-textarea">
+                    <textarea class="textarea-modal" name="user-comment" id="user-comment"
+                        placeholder="Enter text"></textarea>
+                </div>
+                <!-- 5-rd element -->
+                <button type="submit" class="btn-modal-buyNow">Send</button>
+            </form>
+
+        </div>
+    </div>
+    <!-- SUBSCRIBE pop up-->
+    <div class="backdrop is-hidden" data-modal="modal3">
+        <div class="subscribe-modal">
+            <button type="button" class="btn-modal-close" data-modal-close="modal3">
+                <svg class="icon-modal-close" width="24" height="24">
+                    <use href="./images/svg/icons.svg#icon-dollar"></use>
+                </svg>
+            </button>
+            <div class="subscribe-modal-pic">
+                <img src="" alt="">
+            </div>
+            <div class="subscribe-modal-content">
+                <p class="modal-title review-modal-title">Explore our<span class="modal-title-span">new
+                        chocolate</span>first!</p>
+                <!-- форма -->
+                <form class="form-modal form-subscribe">
+                    <div class="form-field">
+                        <div class="form-field-email-buyNow">
+                            <input type="email" class="input-modal-subscribe" name="email"
+                                placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-modal-buyNow">Subscribe</button>
+                </form>
+            </div>
+
+
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/modal.js"></script>
