@@ -125,7 +125,7 @@ img {
     fill: var(--secondary-accent-color);
 }
 
-.header-nav-list {
+.nav-list {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -1075,9 +1075,13 @@ img {
 
 .subscribe {
     background-color: var(--secondary-BG-color);
+    background-image: url(/images/subscribe/Subcribe_BG-desctop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 72px;
     padding-bottom: 72px;
-    margin-bottom: 128px;
+
 }
 
 .subscribe-title {
@@ -1152,4 +1156,91 @@ img {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
     outline: transparent;
     border: 1.50px solid rgba(17, 17, 17, 0.05);
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--secondary-BG-color);
+    padding: 50px 0;
+}
+
+.footer-content {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 543px;
+    /* padding-bottom: 62px; */
+}
+
+.footer-desc {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21429;
+    letter-spacing: -0.02em;
+    color: var(--primary-text-color);
+    width: 300px;
+}
+
+.footer-span-desc {
+    color: var(--secondary-accent-color);
+}
+
+.footerAddr-socialLink {
+    display: flex;
+    gap: 63px;
+    align-items: flex-start;
+    margin-bottom: 62px;
+
+}
+
+.address-desc {
+    font-weight: 500;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.28571;
+    text-align: start;
+    color: var(--primary-text-color);
+    margin-bottom: 14px;
+}
+
+.address-item {
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-align: start;
+
+}
+
+.footer-addr-link {
+    color: var(--primary-text-color);
+}
+
+.address-item:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.footer-icon-social {
+    fill: var(--primary-text-color);
+}
+
+.footer-nav {
+    position: relative;
+}
+
+.footer-link {
+    color: var(--primary-text-color);
+}
+
+.footer-content::after {
+    content: "";
+    position: absolute;
+    bottom: 24px;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
 }

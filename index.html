@@ -28,7 +28,7 @@
                     </svg>
                 </a>
             </div>
-            <ul class="header-nav-list list">
+            <ul class="nav-list list">
                 <li class="nav-item">
                     <a href="#hero" class="nav-item-link link">Home</a>
                 </li>
@@ -74,7 +74,7 @@
             <div class="hero-btns-container">
                 <button type="button" class="btn btn-buy" data-modal-open>Buy now</button>
                 <a href="#made" class=" btn hero-btn-link link">How it’s made</a>
-                <a href="" class="anchor-footer-btn link">
+                <a href="#footer" class="anchor-footer-btn link">
                     <p class="scroll-desc">scroll down</p>
                     <span class="span-circle">
                         <svg class="icon-anchor" width="22" height="22">
@@ -491,8 +491,66 @@
             </div>
         </section>
     </main>
-    <footer></footer>
-    <!-- BUY NOW modal window -->
+    <footer class="footer" id="footer">
+        <div class="footer-content container">
+            <h2 class="footer-title visually-hidden">Simply Chocolate Our contact</h2>
+            <p class="footer-desc">
+                <span class="footer-span-desc">Chocolate</span>
+                a delicious cure for a bad day
+            </p>
+            <div class="footerAddr-socialLink">
+                <address>
+                    <p class="address-desc">Contact us</p>
+                    <ul class="address-list list">
+                        <li class="address-item">
+                            <a href="tel:+380684439426" class="footer-addr-link link">+380 (68) 443-94-26</a>
+                        </li>
+                        <li class="address-item">
+                            <a href="mailto:simplychoc@gmail.com" class="footer-addr-link link">simplychoc@gmail.com</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="header-social-list list">
+                    <li class="social-item">
+                        <a href="" class="social-link link">
+                            <svg class="footer-icon-social" width="24" height="24">
+                                <use href="./images/svg/icons.svg#icon-instagram01"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="" class="social-link link">
+                            <svg class="footer-icon-social" width="24" height="24">
+                                <use href="./images/svg/icons.svg#icon-twitter01"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="footer-nav container">
+            <ul class="nav-list footer-nav-list list">
+                <li class="nav-item">
+                    <a href="#hero" class="nav-item-link footer-addr-link link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#made" class="nav-item-link footer-addr-link link">How it’s made?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-item-link footer-addr-link link">Our products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sellers" class="nav-item-link footer-addr-link link">Top sellers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-item-link footer-addr-link link">Chocolate is loved</a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+    <!-- BUY NOW pop up -->
     <div class="backdrop is-hidden" data-modal="modal1">
         <div class="buyNow-modal">
             <button type="button" class="btn-modal-close" data-modal-close="modal1">
@@ -575,7 +633,7 @@
 
 
     </div>
-    <!-- REVIEW modal window -->
+    <!-- REVIEW pop up -->
     <div class="backdrop is-hidden" data-modal="modal2">
         <div class="reviews-modal">
             <button type="button" class="btn-modal-close" data-modal-close="modal2">
